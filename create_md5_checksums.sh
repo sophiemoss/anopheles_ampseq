@@ -26,3 +26,6 @@ echo "All checksums saved to md5s.txt and individual .md5 files."
 ### Upload to ENA
 
 lftp -u Webin-65104,R9v@0aLBId -e "mput *.fastq.gz; bye" ftp://webin2.ebi.ac.uk
+
+lftp -u Webin-65104,R9v@0aLBId -e "mput *.bam *.md5; bye" ftp://webin2.ebi.ac.uk
+
